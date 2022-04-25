@@ -1,7 +1,13 @@
 import os
 
+def obtainPathRawlogs():
+    return os.path.join(os.getcwd(), 'rawLogs')
 
-def obtainPath():
-    #print('getcwd:      ', os.getcwd())
-    return os.getcwd()
-    #print('__file__:    ', __file__)
+def obtainPathConcateFiles():
+    return os.path.join(os.getcwd(), 'concateFiles')
+
+def obtainPathTxtResult(name):
+    return os.path.join(os.getcwd(), 'resultTxt', name)
+
+def obtainPathExcellResult():
+    return os.path.join(os.getcwd(), 'excellResult')
